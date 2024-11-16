@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>AMIS learning 01</title>
+    <url>/2024/09/14/AMIS-learning-01/</url>
+    <content><![CDATA[<p>AMIS（Application Maker for Interactive Scene）<br><a href="https://developer.baidu.com/article/detail.html?id=3001177">https://developer.baidu.com/article/detail.html?id=3001177</a></p>
+<p>AMIS（Application Maker for Interactive<br>Scene）是百度开源的一个前端低代码框架。低代码开发是一种新型软件开发方式，通过图形界面拖拉拽的方式实现应用程序的快速构建，旨在提高开发效率、缩短开发周期、降低开发成本。AMIS作为前端领域的低代码框架，具有设计精良、易于集成和扩展的特点，代表了国内前端开源低代码领域的最高水平。</p>
+<p>一、AMIS的主要特性</p>
+<p>JSON语法：AMIS采用JSON语法格式，通过简单的配置即可实现复杂的前端页面。这使得非专业开发人员也能轻松上手，快速构建应用程序。<br>成熟组件：AMIS内置了大量开箱即用的成熟组件，如表格、表单、弹窗、布局等，这些组件都是后台管理软件常用的组件。通过这些组件，开发者可以快速搭建出各种功能丰富的界面。<br>在线测试：AMIS提供了在线测试功能，开发者可以在开发过程中实时查看页面效果，方便调试和优化。<br>在线文档：AMIS提供了丰富的在线文档，包括使用教程、API文档、组件说明等，方便开发者学习和使用。<br>二、AMIS的应用场景</p>
+<p>AMIS适用于各种需要快速构建前端界面的场景，尤其适用于后台管理系统的开发。通过AMIS，开发者可以快速搭建出增删改查（CRUD）页面、列表页面、表单页面等各种常见页面。同时，由于AMIS的设计是通用设计，它并不局限于特定的使用场景，可以根据需要进行扩展和定制。</p>
+<p>三、如何使用AMIS</p>
+<p>使用AMIS非常简单，大致可以分为以下几个步骤：</p>
+<p>安装：首先需要安装AMIS的相关依赖，可以通过npm进行安装。<br>配置：根据需求配置JSON文件，定义页面结构、样式和交互行为等。<br>运行：运行配置好的AMIS项目，即可在浏览器中查看效果。<br>调试：根据实际效果进行调试和优化。<br>部署：完成开发后，可以将项目部署到服务器上。<br>四、注意事项</p>
+<p>虽然AMIS的使用非常简单，但也有一些需要注意的地方：</p>
+<p>AMIS的代码实现质量还有待提高，由于其发展时间较长，内部实现中存在一定的冗余代码。<br>在实际应用中，由于低代码框架对性能有一定影响，因此在使用时需要注意优化性能。<br>对于复杂的业务逻辑和特殊需求，可能需要结合其他技术进行实现。<br>五、总结</p>
+<p>总的来说，百度开源的AMIS前端低代码框架是一个强大而易于使用的工具。通过它，开发者可以快速构建出高质量的前端应用程序。虽然在使用过程中需要注意性能优化和特殊需求的处理，但总体来说，AMIS为前端开发带来了极大的便利。如果你正在寻找一个可靠的前端低代码框架，那么AMIS无疑是一个值得考虑的选择。</p>
+<h2 id="toast"><a href="#toast" class="headerlink" title="toast"></a>toast</h2><p>在前端开发中，“toast”指的是一种小型的、非侵入式的通知组件，用于向用户展示短暂的信息。这种通知通常在屏幕的一角弹出，持续几秒钟后自动消失，以提醒用户某个操作的结果，比如成功、失败或其他状态更新。</p>
+<p>使用“toast”的原因包括：</p>
+<ol>
+<li><p><strong>简洁性</strong>：toast 通知通常只包含简短的信息，不需要用户进行交互，可以快速传达消息。</p>
+</li>
+<li><p><strong>非侵入性</strong>：与模态对话框不同，toast 不会打断用户的操作，允许用户继续进行当前任务。</p>
+</li>
+<li><p><strong>易用性</strong>：toast 通常在用户的视线范围内出现，便于用户快速注意到，但不会造成干扰。</p>
+</li>
+</ol>
+<p>总的来说，“toast”这个词在前端开发中已经成为一种标准术语，方便开发者和设计师交流与实现相关功能。</p>
+<p>“Toast”这个单词在前端开发中被使用的原因主要有以下几点：</p>
+<ol>
+<li><p><strong>形象性</strong>：Toast 通常是短暂的、轻量的，就像烤面包时迅速出现的金黄色片一样，传达出这种通知的快速和短暂性。</p>
+</li>
+<li><p><strong>比喻意义</strong>：在社交场合，”to toast” 意味着简单地举杯祝贺或致意，这与通知的目的相似：快速传达信息，庆祝某个事件或状态。</p>
+</li>
+<li><p><strong>行业惯例</strong>：一旦这个词被引入并广泛接受，开发者和设计师就会继续使用它，因为它能够清晰、准确地描述这种特定类型的通知组件。</p>
+</li>
+<li><p><strong>非侵入性特征</strong>：Toast 通知不会打断用户的操作，这也与其轻松、快速的性质相符。</p>
+</li>
+</ol>
+<p>因此，使用“toast”作为术语，不仅能有效传达其功能，还形成了一种行业标准，使沟通更加清晰。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Restart from 2024</title>
+    <url>/2024/09/11/Restart-from-2024/</url>
+    <content><![CDATA[<p>My last post no the github hexo repository was at <strong>2019-11-14 18:59:37</strong>, Maybe I need to resatrt this Blog.<br>From today I will use this bolog to record lerning note,such as langue learning and development exprircen and other things.</p>
+<p>My last post on the GitHub Hexo repository was at 2019-11-14 18:59:37. Maybe I need to restart this blog.<br>From today, I will use this blog to record learning notes, such as language learning, development experiences, and other things.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>独立开发者出海技术栈</title>
+    <url>/2024/11/15/develop-tool-kit/</url>
+    <content><![CDATA[<p><a href="https://github.com/weijunext/indie-hacker-tools">仓库地址</a></p>
+<p>出海第一步，搞定工具库。</p>
+<p>本仓库只收录独立开发者出海技术栈和工具，持续整理中……</p>
+<p><strong>收录标准：</strong></p>
+<ul>
+<li>帮助独立开发者提升开发效率</li>
+<li>帮助独立开发者降低成本</li>
+<li>市场上足够流行</li>
+</ul>
+<p>欢迎提 pr 和 issues 更新。</p>
+<h2 id="Web-开发模板"><a href="#Web-开发模板" class="headerlink" title="Web 开发模板"></a>Web 开发模板</h2><table>
+<thead>
+<tr>
+<th>模板</th>
+<th>特性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/weijunext/smart-excel-ai">smart-excel-ai（免费）</a></td>
+<td>Next.js。集成了登录、支付（lemon squeezy）、AI功能</td>
+</tr>
+<tr>
+<td><a href="https://github.com/wasp-lang/open-saas/">Opensaas（免费）</a></td>
+<td>React + Node.js。集成了登录、支付（stripe）、邮件、AI功能</td>
+</tr>
+<tr>
+<td><a href="https://shipfa.st/?via=wei">Shipfast（付费）</a></td>
+<td>Next.js。集成了登录、支付（stripe）、邮件、AI功能</td>
+</tr>
+<tr>
+<td><a href="https://supastarter.dev/?aff=bgO">SupaStarter（付费）</a></td>
+<td>有 Next.js 和 Nuxt 两种模板，功能比较齐全</td>
+</tr>
+<tr>
+<td><a href="https://xiaobot.net/p/ship-ph-copilot">插件+落地页全栈源码和教程（付费）</a></td>
+<td>源码+教程形式的开发专栏，包含：插件(Plasmo)、落地页(Next.js)、服务端(Next.js)、AI(ChatGPT, DeepSeek)、数据库(Firebase)、支付(Paddle)、登录(Firebase)</td>
+</tr>
+</tbody></table>
+<h2 id="Chrome-插件开发模板"><a href="#Chrome-插件开发模板" class="headerlink" title="Chrome 插件开发模板"></a>Chrome 插件开发模板</h2><table>
+<thead>
+<tr>
+<th>模板</th>
+<th>特性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.plasmo.com/">Plasmo</a></td>
+<td>支持 React、Vue 等多种前端框架 <br><a href="https://xiaobot.net/p/ship-ph-copilot">Plasmo插件开发教程(付费)&gt;&gt;</a></td>
+</tr>
+<tr>
+<td><a href="https://wxt.dev/">wxt.dev</a></td>
+<td>支持 Vue、Svelte 等多种前端框架</td>
+</tr>
+</tbody></table>
+<h3 id="Landing-Page-模板"><a href="#Landing-Page-模板" class="headerlink" title="Landing Page 模板"></a>Landing Page 模板</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tailsc.com/">tailsc</a></td>
+<td>提供了很多组件，开发者：<a href="https://twitter.com/zissy_w">推特@zissy_w</a>、<a href="https://github.com/ZissyW">Github@ZissyW</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/weijunext/landing-page-boilerplate">landing-page-boilerplate</a></td>
+<td>开源、免费、0设计资源的模板</td>
+</tr>
+<tr>
+<td><a href="https://saaslandingpage.com/">saaslandingpage</a> <br/> <a href="https://www.framer.com/templates/categories/landing-page/">framer landing page</a></td>
+<td>landing page &#x2F; 落地页</td>
+</tr>
+</tbody></table>
+<h2 id="技术栈与工具推荐"><a href="#技术栈与工具推荐" class="headerlink" title="技术栈与工具推荐"></a>技术栈与工具推荐</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://nextjs.org/">Next.js</a>🌟</td>
+<td>基于 React，附属学习教程：<br><a href="https://nextjscn.org/">Next.js 中文文档 &gt;&gt;</a><br><a href="https://nextjs.weijunext.com/">Next.js 实践教程 &gt;&gt;</a><br><a href="https://xiaobot.net/p/ship-ph-copilot">全栈开发教程(付费)&gt;&gt;</a></td>
+</tr>
+<tr>
+<td><a href="https://remix.run/">Remix</a></td>
+<td>基于 React，Next.js最大竞争对手</td>
+</tr>
+<tr>
+<td><a href="https://nuxt.com/">Nuxt</a></td>
+<td>基于 Vue</td>
+</tr>
+</tbody></table>
+<h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://docs.nestjs.com/">Nest.js</a></td>
+<td>基于 Node.js</td>
+</tr>
+<tr>
+<td><a href="https://midwayjs.org/">Midway.js</a></td>
+<td>基于 Node.js</td>
+</tr>
+</tbody></table>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://console.firebase.google.com/">Firebase</a>🌟</td>
+<td>支持数据库、云函数、登录鉴权</td>
+</tr>
+<tr>
+<td><a href="https://supabase.com/">Supabase</a>🌟</td>
+<td>支持数据库、文件存储、登录鉴权</td>
+</tr>
+<tr>
+<td><a href="https://console.upstash.com/">Upstash</a>🌟</td>
+<td>支持 Redis、kafka、向量数据库</td>
+</tr>
+<tr>
+<td><a href="https://www.mongodb.com/products/platform/cloud">Mongodb</a></td>
+<td>Mongodb 官方提供一个免费数据库</td>
+</tr>
+<tr>
+<td><a href="https://realm.io/">Realm</a></td>
+<td>SQLite 的快速、可扩展的替代方案</td>
+</tr>
+<tr>
+<td><a href="https://tidbcloud.com/">TiDB Cloud</a></td>
+<td>兼容 Mysql 的 TiDB serverless，支持高可用，5G以内免费</td>
+</tr>
+</tbody></table>
+<h3 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://prisma.io/">Prisma</a>🌟</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/typeorm/typeorm">TypeORM</a></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="样式与UI库"><a href="#样式与UI库" class="headerlink" title="样式与UI库"></a>样式与UI库</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://ui.shadcn.com/">Shadcn&#x2F;ui</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://nextui.org/">NextUI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.radix-ui.com/">radix-ui</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.framer.com/motion/">Framer Motion</a></td>
+<td>动效库</td>
+</tr>
+<tr>
+<td><a href="https://responsiveviewer.org/">Responsive Viewer</a></td>
+<td>chrome 插件。可以一键验证多端响应式布局状态</td>
+</tr>
+</tbody></table>
+<h3 id="原型设计"><a href="#原型设计" class="headerlink" title="原型设计"></a>原型设计</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://v0.dev/">v0</a></td>
+<td>Text to UI, 免费用户有 200 Credits &#x2F; 每月</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Yuyz0112/vx.dev">vx.dev</a></td>
+<td>Text to UI, v0.dev的开源替代品</td>
+</tr>
+<tr>
+<td><a href="https://framer.com/">https://framer.com/</a></td>
+<td>一个设计你的网站的网站，framer-motion就是他们的</td>
+</tr>
+<tr>
+<td><a href="https://www.usegalileo.ai/">usegalileo</a></td>
+<td>Text to UI, 免费用户有 200 Credits</td>
+</tr>
+</tbody></table>
+<h3 id="登录鉴权"><a href="#登录鉴权" class="headerlink" title="登录鉴权"></a>登录鉴权</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://clerk.com/">Clerk</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://console.firebase.google.com/">Firebase</a></td>
+<td>支持数据库、云函数、登录鉴权</td>
+</tr>
+<tr>
+<td><a href="https://supabase.com/">Supabase</a></td>
+<td>支持数据库、文件存储、登录鉴权</td>
+</tr>
+<tr>
+<td><a href="https://next-auth.js.org/">Next-Auth v4</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://authjs.dev/getting-started/introduction">Next-Auth v5</a></td>
+<td>v5 配置和 v4 不同，请注意区分<br> <a href="https://github.com/hafizn07/next-auth-v5-advanced-guide-2024">v5 Demo</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/logto-io/logto">Logto</a></td>
+<td>登录鉴权，有云端版和开源的私有化部署版</td>
+</tr>
+</tbody></table>
+<h3 id="支付"><a href="#支付" class="headerlink" title="支付"></a>支付</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.paddle.com/">Paddle</a></td>
+<td>支持中国大陆身份信息注册和提现</td>
+</tr>
+<tr>
+<td><a href="https://stripe.com/">Stripe</a></td>
+<td>需要企业资质</td>
+</tr>
+</tbody></table>
+<h3 id="邮件"><a href="#邮件" class="headerlink" title="邮件"></a>邮件</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://resend.com/">Resend</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nodemailer/nodemailer">Nodemailer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://react.email/">React Mail</a></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="网站分析"><a href="#网站分析" class="headerlink" title="网站分析"></a>网站分析</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://analytics.google.com/analytics/web/">Google Analytics</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plausible.io/">Plausible</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://umami.is/">Umami</a></td>
+<td>开源可自部署</td>
+</tr>
+<tr>
+<td><a href="https://clarity.microsoft.com/">Clarity</a></td>
+<td>微软出的分析工具</td>
+</tr>
+<tr>
+<td><a href="https://aitdk.com/extension/">AITDK Extension</a> 🌟</td>
+<td>Chrome 插件。网站 SEO 分析工具</td>
+</tr>
+</tbody></table>
+<h3 id="在线客服和反馈服务"><a href="#在线客服和反馈服务" class="headerlink" title="在线客服和反馈服务"></a>在线客服和反馈服务</h3><table>
+<thead>
+<tr>
+<th>技术栈</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tawk.to/">Tawk</a></td>
+<td>在线客服，中国地区可注册</td>
+</tr>
+<tr>
+<td><a href="https://txc.qq.com/">腾讯兔小巢</a></td>
+<td>产品反馈平台，面向国内提供服务可使用</td>
+</tr>
+</tbody></table>
+<h3 id="部署与托管"><a href="#部署与托管" class="headerlink" title="部署与托管"></a>部署与托管</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://vercel.com/dashboard">Vercel</a>🌟</td>
+<td>首选，国内大部分访问不了</td>
+</tr>
+<tr>
+<td><a href="https://zeabur.com/">Zeabur</a></td>
+<td>国内出海团队出品，作者：<a href="https://github.com/MichaelYuhe">@MichaelYuhe</a></td>
+</tr>
+<tr>
+<td><a href="https://railway.app/">Railway</a></td>
+<td>国内也可直接访问</td>
+</tr>
+<tr>
+<td><a href="https://pages.github.com/">Github Pages</a></td>
+<td>免费</td>
+</tr>
+<tr>
+<td><a href="https://developers.cloudflare.com/pages/">Cloudflare Pages</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.aliyun.com/minisite/goods?userCode=hrvtosj1">阿里云服务器</a> <br>  <a href="https://curl.qcloud.com/lsJFImqi">腾讯云服务器</a></td>
+<td>国内云，经常有优惠</td>
+</tr>
+</tbody></table>
+<h3 id="域名购买"><a href="#域名购买" class="headerlink" title="域名购买"></a>域名购买</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.namesilo.com/domain/search-domains?rid=daad870yv">Namesilo</a>🌟</td>
+<td>自动屏蔽whois</td>
+</tr>
+<tr>
+<td><a href="https://www.namecheap.com/">Namecheap</a></td>
+<td>据说比较便宜</td>
+</tr>
+<tr>
+<td><a href="https://www.godaddy.com/">Godaddy</a></td>
+<td>狗爹，懂的都懂</td>
+</tr>
+<tr>
+<td><a href="https://cloudflare.com/">Cloudflare</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wanwang.aliyun.com/domain">阿里云</a> <br>  <a href="https://cloud.tencent.com/act/pro/domain-sale">腾讯云</a> <br> <a href="https://www.volcengine.com/product/domain-service">字节火山引擎</a></td>
+<td>国内平台，cn域名首选平台</td>
+</tr>
+</tbody></table>
+<h3 id="文档管理"><a href="#文档管理" class="headerlink" title="文档管理"></a>文档管理</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://notion.so/">Notion</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://vitepress.vuejs.org/">VitePress</a></td>
+<td>Vite &amp; Vue 驱动的静态站点生成器</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangdi168/VitePressSimple/">VitePressSimple</a></td>
+<td>VitePress可视化工具</td>
+</tr>
+<tr>
+<td><a href="https://starlight.astro.build/">Astro Starlight</a></td>
+<td>建立在 Astro 框架之上的全功能文档主题。<br>Astro 团队成员与中文文档翻译者：<a href="https://github.com/liruifengv/liruifengv">@liruifengv</a></td>
+</tr>
+</tbody></table>
+<h3 id="logo"><a href="#logo" class="headerlink" title="logo"></a>logo</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://iconbuddy.app/logo-maker">iconbuddy</a></td>
+<td>logo 设计</td>
+</tr>
+<tr>
+<td><a href="https://icon.ray.so/">iconray</a></td>
+<td>logo 设计</td>
+</tr>
+<tr>
+<td><a href="https://logodiffusion.com/">logodiffusion</a></td>
+<td>生成你的logo</td>
+</tr>
+<tr>
+<td><a href="https://icon.horse/">icon horse</a></td>
+<td>logo 探测</td>
+</tr>
+<tr>
+<td><a href="https://realfavicongenerator.net/">favicon generator 1</a></td>
+<td>生成多平台多种类logo(ico、PNG、SVG)</td>
+</tr>
+<tr>
+<td><a href="https://www.websiteplanet.com/webtools/favicon-generator/">favicon generator 2</a></td>
+<td>生成多平台多种类logo(ico、PNG、SVG)</td>
+</tr>
+<tr>
+<td><a href="https://www.bitbug.net/">bit bug</a></td>
+<td>PNG&#x2F;JPG 转 ico</td>
+</tr>
+<tr>
+<td><a href="https://www.logo.surf/">Logo.surf</a></td>
+<td>文本 Logo 生成器</td>
+</tr>
+</tbody></table>
+<h3 id="图标库"><a href="#图标库" class="headerlink" title="图标库"></a>图标库</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://iconbuddy.app/">iconbuddy</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://fontawesome.com/icons">fontawesome</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.mingcute.com/">MingCute</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://iconify.design/">iconify</a></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="图片视频素材"><a href="#图片视频素材" class="headerlink" title="图片视频素材"></a>图片视频素材</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://vectorove.com/">vectorove</a></td>
+<td>完全免费，风格统一的插画库，支持预定义颜色以及png和svg格式导出</td>
+</tr>
+</tbody></table>
+<h3 id="图片视频处理工具"><a href="#图片视频处理工具" class="headerlink" title="图片视频处理工具"></a>图片视频处理工具</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tinypng.com/">Tinypng</a></td>
+<td>图片压缩</td>
+</tr>
+<tr>
+<td><a href="https://tiny-img.com/webp/">tiny-img</a></td>
+<td>PNG、JPG 压缩并转 WEBP</td>
+</tr>
+<tr>
+<td><a href="https://ezgif.com/video-to-gif">video-to-gif</a></td>
+<td>视频转 GIF</td>
+</tr>
+</tbody></table>
+<h3 id="录屏"><a href="#录屏" class="headerlink" title="录屏"></a>录屏</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://gemoo.com/focusee/">focusee</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.screen.studio/">Screen Studio</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://obsproject.com/">OBS Studio</a></td>
+<td>开源、windows、mac、linux</td>
+</tr>
+</tbody></table>
+<h3 id="短链"><a href="#短链" class="headerlink" title="短链"></a>短链</h3><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/dubinc/dub">dub</a></td>
+<td>免费用户每个月可以创建25个链接</td>
+</tr>
+</tbody></table>
+<h2 id="信息渠道"><a href="#信息渠道" class="headerlink" title="信息渠道"></a>信息渠道</h2><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.producthunt.com/">Product Hunt</a></td>
+<td>新产品打榜聚集地。Product Hunt 助手：<a href="https://phcopilot.ai/">PHCopilot.AI</a></td>
+</tr>
+<tr>
+<td><a href="https://news.ycombinator.com/">Hacker News</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.indiehackers.com/">Indie Hackers</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w2solo.com/">w2solo</a></td>
+<td>中文独立开发者社区</td>
+</tr>
+<tr>
+<td><a href="https://chuhaituan.com/">出海团</a></td>
+<td>专注于分享优秀出海产品的拼团平台</td>
+</tr>
+</tbody></table>
+<h2 id="产品发布提交"><a href="#产品发布提交" class="headerlink" title="产品发布提交"></a>产品发布提交</h2><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.producthunt.com/">Product Hunt</a></td>
+<td>新产品主打阵地，发布后其他导航站回来爬取，首选发布地。Product Hunt 助手：<a href="https://phcopilot.ai/">PHCopilot.AI</a></td>
+</tr>
+<tr>
+<td><a href="https://news.ycombinator.com/">Hacker News</a></td>
+<td>发布注意要写软文，否则容易被删帖</td>
+</tr>
+<tr>
+<td><a href="https://poweredbyai.app/">PoweredByAI</a></td>
+<td>免费提交产品</td>
+</tr>
+<tr>
+<td><a href="https://www.pinterest.com/">Pinterest</a></td>
+<td>发布视频频道也会被Google收录（免费）</td>
+</tr>
+</tbody></table>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://wangchujiang.com/free-font/">免费【中文】字体</a></td>
+<td>免费可商用【中文】字体</td>
+</tr>
+<tr>
+<td><a href="https://www.freefaces.gallery/">免费【英文】字体</a></td>
+<td>免费可商用【英文】字体</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>Intrudicing Baidu&#39;s Low-Code-Front-End Framwork AMIS  for Rapid Page Development</title>
+    <url>/2024/09/14/Introduce-Baidu-AMIS/</url>
+    <content><![CDATA[<p>Amis, a low-code front-end framework open-sourced by Baidu, offers an efficient approach to page development, particularly suited for projects requiring rapid iteration. This framework revolutionizes the traditional front-end development process by empowering developers to generate complex pages through simple JSON configurations rather than extensive coding.</p>
+<p><strong>Key Features of Amis</strong>:</p>
+<ol>
+<li><p><strong>Low-Code Development</strong>:</p>
+<ul>
+<li>Amis allows developers to swiftly build backend management pages by merely configuring JSON files, significantly reducing the workload associated with front-end development. This feature enables even non-technical users to create functional pages with minimal training.</li>
+</ul>
+</li>
+<li><p><strong>Rich Component Library</strong>:</p>
+<ul>
+<li>Amis boasts a comprehensive component library comprising over 130+ reusable UI components, including forms, tables, charts, rich text editors, file uploaders, calendars, and more. This extensive library caters to a wide range of development needs, facilitating the creation of visually appealing and feature-rich interfaces.</li>
+</ul>
+</li>
+<li><p><strong>High Efficiency and Flexibility</strong>:</p>
+<ul>
+<li>By leveraging JSON configurations, Amis streamlines the development process, enabling rapid page construction and iteration. Moreover, it supports custom component development, allowing for a hybrid approach combining low-code configuration with traditional coding, ensuring both efficiency and flexibility.</li>
+</ul>
+</li>
+<li><p><strong>Dynamic Rendering and Integration</strong>:</p>
+<ul>
+<li>Amis dynamically generates pages based on user permissions and data states, providing robust control over access and content presentation. It also integrates seamlessly with various backend services, facilitating data fetching and form submission through JSON-defined APIs.</li>
+</ul>
+</li>
+<li><p><strong>Extensive Application</strong>:</p>
+<ul>
+<li>Amis has been widely adopted within Baidu, having created tens of thousands of pages across various departments and projects. Its versatility has been proven in diverse scenarios, ranging from content moderation to machine management, and from data analysis to model training.</li>
+</ul>
+</li>
+<li><p><strong>Easy Maintenance</strong>:</p>
+<ul>
+<li>The use of JSON configurations for page definition enhances code readability and maintainability. This makes it easier for developers to update and manage existing pages, reducing long-term maintenance costs.</li>
+</ul>
+</li>
+<li><p><strong>Cross-Platform Compatibility</strong>:</p>
+<ul>
+<li>Amis’s configuration-based approach ensures that a single set of configurations can be adapted for use on multiple platforms, including web and mobile, simplifying the development process for multi-channel applications.</li>
+</ul>
+</li>
+</ol>
+<p><strong>How It Works</strong>:</p>
+<p>Amis translates JSON configurations into corresponding React components. The <code>type</code> property in the JSON determines the component to be rendered, while other properties are passed as props to the component, facilitating dynamic and responsive page generation.</p>
+<p><strong>Conclusion</strong>:</p>
+<p>Amis, as a low-code front-end framework, offers a powerful and efficient solution for rapid page development. Its combination of simplicity, flexibility, and extensibility makes it an ideal choice for developers seeking to streamline their front-end development processes while maintaining high levels of customization and control.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/09/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Next主题找不到auto_excerpt</title>
+    <url>/2024/11/16/hexo%E5%88%86%E9%A1%B5/</url>
+    <content><![CDATA[<p>在Hexo博客的Next主题中，如果遇到阅读全文没有<code>auto_excerpt</code>的问题，这通常是因为在新版本的Next主题中，<code>auto_excerpt</code>功能已被移除。为了解决这个问题，你可以采取以下步骤：</p>
+<h3 id="一、安装hexo-excerpt插件"><a href="#一、安装hexo-excerpt插件" class="headerlink" title="一、安装hexo-excerpt插件"></a>一、安装hexo-excerpt插件</h3><p>由于Next主题的新版本不再支持<code>auto_excerpt</code>，你可以通过安装<code>hexo-excerpt</code>插件来替代这一功能。在Hexo博客的网站根目录下，打开命令行工具，运行以下命令来安装插件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-excerpt --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、配置站点和主题"><a href="#二、配置站点和主题" class="headerlink" title="二、配置站点和主题"></a>二、配置站点和主题</h3><p>安装完插件后，你需要在站点配置文件和主题配置文件中进行相应的设置。</p>
+<ol>
+<li><p><strong>站点配置文件（_config.yml）</strong>：</p>
+<p> 在站点配置文件中，你可以添加以下配置项来设置摘录的深度、排除的页面以及是否隐藏全文摘录等：</p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt:</span></span><br><span class="line">  <span class="attr">depth:</span> <span class="number">5</span>                <span class="comment"># 摘录的深度，即生成的摘录内容所包含的层级标题数量</span></span><br><span class="line">  <span class="attr">excerpt_excludes:</span> []    <span class="comment"># 不生成摘录的页面列表</span></span><br><span class="line">  <span class="attr">more_excludes:</span> []       <span class="comment"># 不使用&lt;!-- more --&gt;标签的页面列表</span></span><br><span class="line">  <span class="attr">hideWholePostExcerpts:</span> <span class="literal">true</span> <span class="comment"># 是否隐藏全文摘录（当文章较短时，可能不需要摘录）</span></span><br></pre></td></tr></table></figure>
+
+<p> 注意：这里的配置项可能因插件版本的不同而有所差异，请根据你安装的插件版本进行调整。</p>
+</li>
+<li><p><strong>主题配置文件（themes&#x2F;next&#x2F;_config.yml）</strong>：</p>
+<p> 在主题配置文件中，你需要启用摘录描述和阅读全文按钮等配置项。例如：</p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span>  <span class="comment"># 是否在摘录下方显示文章描述</span></span><br><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span>        <span class="comment"># 是否显示阅读全文按钮</span></span><br></pre></td></tr></table></figure>
+
+<p> 此外，如果你希望在文章中使用<code>&lt;!-- more --&gt;</code>标签来精确控制摘录的内容，你可以在该标签之前的内容作为摘录显示。如果不使用此标签，则插件将按照站点配置文件中设置的深度来自动生成摘录。</p>
+</li>
+</ol>
+<h3 id="三、生成和部署博客"><a href="#三、生成和部署博客" class="headerlink" title="三、生成和部署博客"></a>三、生成和部署博客</h3><p>完成以上配置后，你需要重新生成博客并部署到服务器或本地进行预览。运行以下命令来生成博客：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>然后，你可以使用<code>hexo server</code>命令来启动本地服务器进行预览，或者将生成的博客文件部署到你的服务器上。</p>
+<h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><ol>
+<li><strong>插件版本</strong>：请确保你安装的<code>hexo-excerpt</code>插件版本与你的Hexo和Next主题版本兼容。</li>
+<li><strong>配置冲突</strong>：在配置过程中，请注意避免与其他插件或主题的配置项发生冲突。</li>
+<li><strong>备份</strong>：在进行任何配置更改之前，请务必备份你的站点配置文件和主题配置文件，以防止意外丢失数据。</li>
+</ol>
+<p>通过以上步骤，你应该能够成功解决Hexo博客的Next主题中阅读全文没有<code>auto_excerpt</code>的问题。如果仍然遇到问题，请检查你的配置是否正确，或者查阅相关文档和社区支持以获取更多帮助。</p>
+]]></content>
+      <tags>
+        <tag>Hexo配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>tag页面功能添加</title>
+    <url>/2024/11/16/tag%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0/</url>
+    <content><![CDATA[<h2 id="步骤一生成-Tag-page"><a href="#步骤一生成-Tag-page" class="headerlink" title="步骤一生成 Tag page"></a>步骤一生成 Tag page</h2><p>你需要在hexo根目录的source文件夹下新建一个tags文件夹，然后在tags文件夹里面新建一个index.md文件。快捷命令为：$ hexo new page “tags”</p>
+<h2 id="步骤二编辑index-md文件，内容如下："><a href="#步骤二编辑index-md文件，内容如下：" class="headerlink" title="步骤二编辑index.md文件，内容如下："></a>步骤二编辑index.md文件，内容如下：</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="步骤三-打开Next主题-tags-选项"><a href="#步骤三-打开Next主题-tags-选项" class="headerlink" title="步骤三 打开Next主题 tags 选项"></a>步骤三 打开Next主题 tags 选项</h2><p>新建标签及分类界面<br>打开 主题配置文件，搜索 menu，找到如下代码：<br>把 tags 和 categories 前面的 # 删除，</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+
+
+<p>Local Search本地搜索<br>安装插件hexo-generator-searchdb,执行以下命令:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-searchdb</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+
+
+<p>修改hexo&#x2F;_config.yml站点配置文件，新增以下内容到任意位置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line"><span class="attr">field:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">format:</span> <span class="string">html</span></span><br><span class="line"><span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+
+<p>编辑 主题配置文件，启用本地搜索功能：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>————————————————<br> 博客为博主原创，转载请评论说明并注明出处，谢谢</p>
+<p>原文链接：<a href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></p>
+]]></content>
+      <categories>
+        <category>专业</category>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>Hexo配置</tag>
+        <tag>Next主题</tag>
+        <tag>linux</tag>
+        <tag>ubuntu</tag>
+        <tag>centos</tag>
+        <tag>mail</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 文章加密</title>
+    <url>/2024/11/16/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</url>
+    <content><![CDATA[<p>在Hexo的Next主题中实现文章加密访问，可以通过安装和使用相关的插件来完成。以下是一个详细的步骤指南：</p>
+<h3 id="一、安装加密插件"><a href="#一、安装加密插件" class="headerlink" title="一、安装加密插件"></a>一、安装加密插件</h3><ol>
+<li><p><strong>选择插件</strong>：</p>
+<ul>
+<li>可以选择<code>hexo-blog-encrypt</code>插件来实现文章加密功能。</li>
+</ul>
+</li>
+<li><p><strong>安装插件</strong>：</p>
+<ul>
+<li>打开你的Hexo博客根目录。</li>
+<li>使用npm或yarn安装插件。例如，使用npm安装可以运行以下命令：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure></li>
+<li>或者，如果你使用yarn，可以运行：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add hexo-blog-encrypt</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h3 id="二、配置插件"><a href="#二、配置插件" class="headerlink" title="二、配置插件"></a>二、配置插件</h3><ol>
+<li><p><strong>启用插件</strong>：</p>
+<ul>
+<li>在Hexo的站点配置文件<code>_config.yml</code>中，找到或添加<code>encrypt</code>配置项，并启用插件：<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">encrypt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>设置默认加密信息</strong>（可选）：</p>
+<ul>
+<li>在<code>_config.yml</code>中，你还可以设置默认的摘要（<code>default_abstract</code>）和密码输入框上方的描述性文字（<code>default_message</code>），以便在加密文章时自动填充这些信息。例如：<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line"><span class="attr">abstract:</span> <span class="string">这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。</span></span><br><span class="line"><span class="attr">message:</span> <span class="string">输入密码，查看文章。</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">encryptAsDiary</span>, <span class="attr">password:</span> <span class="string">passwordA</span>&#125;</span><br><span class="line"><span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">encryptAsTips</span>, <span class="attr">password:</span> <span class="string">passwordB</span>&#125;</span><br><span class="line"><span class="attr">wrong_pass_message:</span> <span class="string">抱歉,</span> <span class="string">您输入的密码不对哦,</span> <span class="string">请再试试.</span></span><br><span class="line"><span class="attr">wrong_hash_message:</span> <span class="string">抱歉,</span> <span class="string">这个文章不能被校验,</span> <span class="string">不过您还是能看看解密后的内容.</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h3 id="三、加密文章"><a href="#三、加密文章" class="headerlink" title="三、加密文章"></a>三、加密文章</h3><ol>
+<li><strong>添加加密信息</strong>：<ul>
+<li>在你想要加密的文章的头部（YAML front matter）中添加<code>password</code>字段，以及可选的<code>abstract</code>和<code>message</code>字段。例如：<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">加密文章示例</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2024-11-16T18:51:54.000Z</span></span><br><span class="line"><span class="attr">password:</span> <span class="string">yourpassword123</span></span><br><span class="line"><span class="attr">abstract:</span> <span class="string">这是一篇加密文章的摘要。</span></span><br><span class="line"><span class="attr">message:</span> <span class="string">请输入密码查看文章内容。</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<p> <strong>对博文禁用 Tag 加密</strong></p>
+<ul>
+<li>只需要将博文头部的 password 设置为 “” 即可取消 Tag 加密。</li>
+</ul>
+<ol start="2">
+<li><strong>生成和查看加密文章</strong>：<ul>
+<li>运行Hexo的生成和预览命令：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure></li>
+<li>在浏览器中打开你的Hexo博客，找到加密的文章并尝试访问。你应该会看到一个密码输入框，输入正确的密码后才能查看文章内容。</li>
+</ul>
+</li>
+</ol>
+<h3 id="四、对TOC进行加密（可选）"><a href="#四、对TOC进行加密（可选）" class="headerlink" title="四、对TOC进行加密（可选）"></a>四、对TOC进行加密（可选）</h3><p>如果你的文章包含目录（TOC），并且你希望也对目录进行加密，你可能需要修改Next主题的模板文件。具体步骤如下：</p>
+<ol>
+<li><p><strong>找到并修改模板文件</strong>：</p>
+<ul>
+<li>在Next主题的<code>layout</code>文件夹中找到与文章相关的模板文件（如<code>article.ejs</code>）。</li>
+<li>根据插件的文档或示例代码，修改模板文件中的TOC生成代码，以便在加密时隐藏目录。</li>
+</ul>
+</li>
+<li><p><strong>重新生成和预览博客</strong>：</p>
+<ul>
+<li>运行Hexo的生成和预览命令，查看修改后的效果。</li>
+</ul>
+</li>
+</ol>
+<h3 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a>五、注意事项</h3><ul>
+<li><strong>安全性</strong>：虽然这种方法可以为你的文章提供基本的加密保护，但请注意，它并不是一种非常安全的加密方式。如果你的博客源码是公开的（如存放在GitHub上），别有用心之人仍然有可能通过查看源码找到加密密码。因此，对于非常敏感的内容，建议使用更安全的加密和保护方法。</li>
+<li><strong>兼容性</strong>：确保你使用的Hexo版本和Next主题版本与加密插件兼容。如果不兼容，可能会出现错误或无法正常工作的情况。</li>
+<li><strong>备份</strong>：在修改配置文件或模板文件之前，建议备份原始文件，以便在出现问题时能够恢复。</li>
+</ul>
+<h1 id="太强了，还是看看下面的官方文档吧"><a href="#太强了，还是看看下面的官方文档吧" class="headerlink" title="太强了，还是看看下面的官方文档吧"></a>太强了，还是看看下面的官方文档吧</h1><p><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">插件仓库地址</a></p>
+<h1 id="hexo-blog-encrypt"><a href="#hexo-blog-encrypt" class="headerlink" title="hexo-blog-encrypt"></a>hexo-blog-encrypt</h1><p><img src="https://img.shields.io/github/v/release/D0n9x1n/hexo-blog-encrypt?include_prereleases" alt="GitHub release (latest SemVer including pre-releases)"><br><a href="https://scrutinizer-ci.com/g/MikeCoder/hexo-blog-encrypt/build-status/master"><img src="https://scrutinizer-ci.com/g/MikeCoder/hexo-blog-encrypt/badges/build.png?b=master" alt="Build Status"></a><br><a href="https://scrutinizer-ci.com/g/MikeCoder/hexo-blog-encrypt/?branch=master"><img src="https://scrutinizer-ci.com/g/MikeCoder/hexo-blog-encrypt/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a></p>
+<h4 id="提-issue-之前，请务必提供复现方式，log，配置信息等必要信息。良好的-issue-可以节省双方的时间。"><a href="#提-issue-之前，请务必提供复现方式，log，配置信息等必要信息。良好的-issue-可以节省双方的时间。" class="headerlink" title="提 issue 之前，请务必提供复现方式，log，配置信息等必要信息。良好的 issue 可以节省双方的时间。"></a>提 issue 之前，请务必提供复现方式，log，配置信息等必要信息。良好的 issue 可以节省双方的时间。</h4><p><em>请严格按照模版要求，不明确的 issue 将直接关闭。</em></p>
+<p><strong>参考 issue:</strong></p>
+<blockquote>
+<ul>
+<li><a href="https://github.com/MikeCoder/hexo-blog-encrypt/issues/83">Issue 83</a></li>
+<li><a href="https://github.com/MikeCoder/hexo-blog-encrypt/issues/68">Issue 68</a></li>
+</ul>
+</blockquote>
+<h2 id="这是个啥"><a href="#这是个啥" class="headerlink" title="这是个啥"></a>这是个啥</h2><ul>
+<li><p><del>首先, 这是 Hexo 生态圈中 <strong>最好的</strong> 博客加密插件</del></p>
+</li>
+<li><p>你可能需要写一些私密的博客, 通过密码验证的方式让人不能随意浏览.</p>
+</li>
+<li><p>这在 wordpress, emlog 或是其他博客系统中都很容易实现, 然而 hexo 除外. :(</p>
+</li>
+<li><p>为了解决这个问题, 让我们有请 “hexo-blog-encrypt”.</p>
+</li>
+</ul>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li><p>一旦你输入了正确的密码, 它将会被存储在本地浏览器的 localStorage中. 按个按钮, 密码将会被清空. 若博客中有脚本, 它将会被正确地执行.</p>
+</li>
+<li><p>支持按标签加密.</p>
+</li>
+<li><p>所有的核心功能都是由原生的 API 所提供的. 在 Node.js中, 我们使用 <a href="https://nodejs.org/dist/latest-v12.x/docs/api/crypto.html">Crypto</a>. 在浏览器中, 我们使用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API">Web Crypto API</a>.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc2898">PBKDF2</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf">SHA256</a> 被用于分发密钥, <a href="https://csrc.nist.gov/publications/detail/sp/800-38a/final">AES256-CBC</a> 被用于加解密, 我们还使用 <a href="https://csrc.nist.gov/csrc/media/publications/fips/198/1/final/documents/fips-198-1_final.pdf">HMAC</a> 来验证密文的来源, 并确保其未被篡改.</p>
+</li>
+<li><p>我们广泛地使用 Promise 来进行异步操作, 以此确保线程不被阻塞.</p>
+</li>
+<li><p>加密页面多主题支持, 现在已经支持的主题有 [<code>default</code>, <code>xray</code>], 更多的主题正在开发中.</p>
+</li>
+<li><p>过时的浏览器将不能正常显示, 因此, 请升级您的浏览器.</p>
+</li>
+</ul>
+<h2 id="在线演示"><a href="#在线演示" class="headerlink" title="在线演示"></a>在线演示</h2><ul>
+<li>点击 <a href="https://mhexo.github.io/">Demo Page</a>, <strong>所有的密码都是 <code>hello</code></strong>.</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li><p><code>npm install --save hexo-blog-encrypt</code></p>
+</li>
+<li><p>或 <code>yarn add hexo-blog-encrypt</code> (需要) <a href="https://yarnpkg.com/en/">Yarn</a>)</p>
+</li>
+</ul>
+<h2 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h2><ul>
+<li>将 “password” 字段添加到您文章信息头就像这样.</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2016-03-30 21:18:02</span><br><span class="line"><span class="section">password: hello</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>再使用 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 在本地预览加密的文章.</li>
+</ul>
+<h2 id="设置优先级"><a href="#设置优先级" class="headerlink" title="设置优先级"></a>设置优先级</h2><p>文章信息头 &gt; 按标签加密</p>
+<h2 id="高级设置"><a href="#高级设置" class="headerlink" title="高级设置"></a>高级设置</h2><h3 id="文章信息头"><a href="#文章信息头" class="headerlink" title="文章信息头"></a>文章信息头</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">-</span> 作为日记加密</span><br><span class="line">date: 2016-03-30 21:12:21</span><br><span class="line">password: mikemessi</span><br><span class="line">abstract: 有东西被加密了, 请输入密码查看.</span><br><span class="line">message: 您好, 这里需要密码.</span><br><span class="line">wrong<span class="emphasis">_pass_</span>message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class="line"><span class="section">wrong<span class="emphasis">_hash_</span>message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a><code>_config.yml</code></h3><h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line">  <span class="attr">abstract:</span> <span class="string">有东西被加密了,</span> <span class="string">请输入密码查看.</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">您好,</span> <span class="string">这里需要密码.</span></span><br><span class="line">  <span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码A</span>&#125;</span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码B</span>&#125;</span><br><span class="line">  <span class="attr">wrong_pass_message:</span> <span class="string">抱歉,</span> <span class="string">这个密码看着不太对,</span> <span class="string">请再试试.</span></span><br><span class="line">  <span class="attr">wrong_hash_message:</span> <span class="string">抱歉,</span> <span class="string">这个文章不能被校验,</span> <span class="string">不过您还是能看看解密后的内容.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="对博文禁用-Tag-加密"><a href="#对博文禁用-Tag-加密" class="headerlink" title="对博文禁用 Tag 加密"></a>对博文禁用 Tag 加密</h4><p>只需要将博文头部的 <code>password</code> 设置为 <code>&quot;&quot;</code> 即可取消 Tag 加密.</p>
+<p>Example:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Callback Test</span><br><span class="line">date: 2019-12-21 11:54:07</span><br><span class="line">tags:</span><br><span class="line">    - A Tag should be encrypted</span><br><span class="line">password: &quot;&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">Use a &quot;&quot; to diable tag encryption.</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置优先级"><a href="#配置优先级" class="headerlink" title="配置优先级"></a>配置优先级</h3><p>文章信息头 &gt; <code>_config.yml</code> (站点根目录下的) &gt; 默认配置</p>
+<h3 id="关于-Callback-函数"><a href="#关于-Callback-函数" class="headerlink" title="关于 Callback 函数"></a>关于 Callback 函数</h3><p>在部分博客中, 解密后部分元素可能无法正常显示或者表现, 这属于已知问题. 目前的解决办法是通过自行查阅自己的博客中的代码, 了解到在 onload 事件发生时调用了哪些函数, 并将这些函数挑选后写入到博客内容中. 如:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Callback Test</span><br><span class="line">date: 2019-12-21 11:54:07</span><br><span class="line">tags:</span><br><span class="line">    - Encrypted</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">This is a blog to test Callback functions. You just need to add code at the last of your post like following:</span><br><span class="line"></span><br><span class="line">It will be called after the blog decrypted.</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    // 添加一个 script tag 与代码在文章末尾.</span><br><span class="line">    alert(&quot;Hello World&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例子在: <a href="https://mhexo.github.io/2020/12/06/Callback-Test/">Callback 例子</a>.</p>
+<h3 id="解密后的触发事件"><a href="#解密后的触发事件" class="headerlink" title="解密后的触发事件"></a>解密后的触发事件</h3><p>感谢 @<a href="https://github.com/f-dong">f-dong</a>, 我们现在会在解密完成后触发一个 <code>hexo-blog-decrypt</code> 事件, 你们可以编写 callback 来监听该事件.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// trigger event</span><br><span class="line">var event = new Event(&#x27;hexo-blog-decrypt&#x27;);</span><br><span class="line">window.dispatchEvent(event);</span><br></pre></td></tr></table></figure>
+
+<h3 id="对-TOC-进行加密"><a href="#对-TOC-进行加密" class="headerlink" title="对 TOC 进行加密"></a>对 TOC 进行加密</h3><p>如果你有一篇文章使用了 TOC，你需要修改模板的部分代码。这里用 landscape 作为例子：</p>
+<ul>
+<li>你可以在 hexo&#x2F;themes&#x2F;landscape&#x2F;layout&#x2F;_partial&#x2F;article.ejs 找到 article.ejs。</li>
+<li>然后找到 &lt;% post.content %&gt; 这段代码，通常在30行左右。</li>
+<li>使用如下的代码来替代它:</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;% if(post.toc == true)&#123; %&gt;</span><br><span class="line">  &lt;div id=&quot;toc-div&quot; class=&quot;toc-article&quot; &lt;% if (post.encrypt == true) &#123; %&gt;style=&quot;display:none&quot; &lt;% &#125; %&gt;&gt;</span><br><span class="line">    &lt;strong class=&quot;toc-title&quot;&gt;Index&lt;/strong&gt;</span><br><span class="line">      &lt;% if (post.encrypt == true) &#123; %&gt;</span><br><span class="line">        &lt;%- toc(post.origin, &#123;list_number: true&#125;) %&gt;</span><br><span class="line">      &lt;% &#125; else &#123; %&gt;</span><br><span class="line">        &lt;%- toc(post.content, &#123;list_number: true&#125;) %&gt;</span><br><span class="line">      &lt;% &#125; %&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br><span class="line">&lt;%- post.content %&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="禁用-Log"><a href="#禁用-Log" class="headerlink" title="禁用 Log"></a>禁用 Log</h3><p>If you want to disable the logging, you can add a silent property in <code>_config.yml</code> and set it to true.<br>如果你想要禁止使用 Log, 你可以在 <code>_config.yml</code> 中增加一个 silent 属性, 并将其设置为 true.</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line">  <span class="attr">silent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>这样就会禁止如 <code>INFO  hexo-blog-encrypt: encrypting &quot;&#123;Blog Name&#125;&quot; based on Tag: &quot;EncryptedTag&quot;.</code> 的日志.</p>
+<h3 id="加密主题"><a href="#加密主题" class="headerlink" title="加密主题"></a>加密主题</h3><p>之前, 我们尝试使用 <code>template</code> 关键字来让用户能修改自己的主题. 后来发现真不是一个好主意. 所以我们现在引入了主题: <code>theme</code> 关键字.</p>
+<p>你可以简单的使用 <code>theme</code> 在 <code>_config.yml</code> 里或者文章头, 如下:</p>
+<h3 id="文章信息头-1"><a href="#文章信息头-1" class="headerlink" title="文章信息头"></a>文章信息头</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">-</span> 作为日记加密</span><br><span class="line">date: 2016-03-30 21:12:21</span><br><span class="line">password: mikemessi</span><br><span class="line">abstract: 有东西被加密了, 请输入密码查看.</span><br><span class="line">message: 您好, 这里需要密码.</span><br><span class="line">theme: xray</span><br><span class="line">wrong<span class="emphasis">_pass_</span>message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class="line"><span class="section">wrong<span class="emphasis">_hash_</span>message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="在-config-yml"><a href="#在-config-yml" class="headerlink" title="在 _config.yml"></a>在 <code>_config.yml</code></h3><h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line">  <span class="attr">abstract:</span> <span class="string">有东西被加密了,</span> <span class="string">请输入密码查看.</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">您好,</span> <span class="string">这里需要密码.</span></span><br><span class="line">  <span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码A</span>&#125;</span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码B</span>&#125;</span><br><span class="line">  <span class="attr">theme:</span> <span class="string">xray</span></span><br><span class="line">  <span class="attr">wrong_pass_message:</span> <span class="string">抱歉,</span> <span class="string">这个密码看着不太对,</span> <span class="string">请再试试.</span></span><br><span class="line">  <span class="attr">wrong_hash_message:</span> <span class="string">抱歉,</span> <span class="string">这个文章不能被校验,</span> <span class="string">不过您还是能看看解密后的内容.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>你可以在线挑选你喜欢的主题,并应用到你的博客中:</p>
+<ul>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Default/">default</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Blink/">blink</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Shrink/">shrink</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Flip/">flip</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Up/">up</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Surge/">surge</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Wave/">wave</a></li>
+<li><a href="https://mhexo.github.io/2020/12/23/Theme-Test-Xray/">xray</a></li>
+</ul>
+<h2 id="许可"><a href="#许可" class="headerlink" title="许可"></a>许可</h2><p>看看 <a href="./LICENSE">LICENSE</a>.</p>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>Collaborator - <a href="https://github.com/xiazeyu">xiazeyu</a></p>
+]]></content>
+      <tags>
+        <tag>Encrypted</tag>
+      </tags>
+  </entry>
+</search>
