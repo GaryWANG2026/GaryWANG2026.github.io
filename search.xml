@@ -40,6 +40,13 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Restart from 2024</title>
+    <url>/2024/09/11/Restart-from-2024/</url>
+    <content><![CDATA[<p>My last post no the github hexo repository was at <strong>2019-11-14 18:59:37</strong>, Maybe I need to resatrt this Blog.<br>From today I will use this bolog to record lerning note,such as langue learning and development exprircen and other things.</p>
+<p>My last post on the GitHub Hexo repository was at 2019-11-14 18:59:37. Maybe I need to restart this blog.<br>From today, I will use this blog to record learning notes, such as language learning, development experiences, and other things.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Intrudicing Baidu&#39;s Low-Code-Front-End Framwork AMIS  for Rapid Page Development</title>
     <url>/2024/09/14/Introduce-Baidu-AMIS/</url>
     <content><![CDATA[<p>Amis, a low-code front-end framework open-sourced by Baidu, offers an efficient approach to page development, particularly suited for projects requiring rapid iteration. This framework revolutionizes the traditional front-end development process by empowering developers to generate complex pages through simple JSON configurations rather than extensive coding.</p>
@@ -88,13 +95,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Restart from 2024</title>
-    <url>/2024/09/11/Restart-from-2024/</url>
-    <content><![CDATA[<p>My last post no the github hexo repository was at <strong>2019-11-14 18:59:37</strong>, Maybe I need to resatrt this Blog.<br>From today I will use this bolog to record lerning note,such as langue learning and development exprircen and other things.</p>
-<p>My last post on the GitHub Hexo repository was at 2019-11-14 18:59:37. Maybe I need to restart this blog.<br>From today, I will use this blog to record learning notes, such as language learning, development experiences, and other things.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2024/09/11/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -111,6 +111,81 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Next主题找不到auto_excerpt</title>
+    <url>/2024/11/16/hexo%E5%88%86%E9%A1%B5/</url>
+    <content><![CDATA[<p>在Hexo博客的Next主题中，如果遇到阅读全文没有<code>auto_excerpt</code>的问题，这通常是因为在新版本的Next主题中，<code>auto_excerpt</code>功能已被移除。为了解决这个问题，你可以采取以下步骤：</p>
+<h3 id="一、安装hexo-excerpt插件"><a href="#一、安装hexo-excerpt插件" class="headerlink" title="一、安装hexo-excerpt插件"></a>一、安装hexo-excerpt插件</h3><p>由于Next主题的新版本不再支持<code>auto_excerpt</code>，你可以通过安装<code>hexo-excerpt</code>插件来替代这一功能。在Hexo博客的网站根目录下，打开命令行工具，运行以下命令来安装插件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-excerpt --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、配置站点和主题"><a href="#二、配置站点和主题" class="headerlink" title="二、配置站点和主题"></a>二、配置站点和主题</h3><p>安装完插件后，你需要在站点配置文件和主题配置文件中进行相应的设置。</p>
+<ol>
+<li><p><strong>站点配置文件（_config.yml）</strong>：</p>
+<p> 在站点配置文件中，你可以添加以下配置项来设置摘录的深度、排除的页面以及是否隐藏全文摘录等：</p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt:</span></span><br><span class="line">  <span class="attr">depth:</span> <span class="number">5</span>                <span class="comment"># 摘录的深度，即生成的摘录内容所包含的层级标题数量</span></span><br><span class="line">  <span class="attr">excerpt_excludes:</span> []    <span class="comment"># 不生成摘录的页面列表</span></span><br><span class="line">  <span class="attr">more_excludes:</span> []       <span class="comment"># 不使用&lt;!-- more --&gt;标签的页面列表</span></span><br><span class="line">  <span class="attr">hideWholePostExcerpts:</span> <span class="literal">true</span> <span class="comment"># 是否隐藏全文摘录（当文章较短时，可能不需要摘录）</span></span><br></pre></td></tr></table></figure>
+
+<p> 注意：这里的配置项可能因插件版本的不同而有所差异，请根据你安装的插件版本进行调整。</p>
+</li>
+<li><p><strong>主题配置文件（themes&#x2F;next&#x2F;_config.yml）</strong>：</p>
+<p> 在主题配置文件中，你需要启用摘录描述和阅读全文按钮等配置项。例如：</p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span>  <span class="comment"># 是否在摘录下方显示文章描述</span></span><br><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span>        <span class="comment"># 是否显示阅读全文按钮</span></span><br></pre></td></tr></table></figure>
+
+<p> 此外，如果你希望在文章中使用<code>&lt;!-- more --&gt;</code>标签来精确控制摘录的内容，你可以在该标签之前的内容作为摘录显示。如果不使用此标签，则插件将按照站点配置文件中设置的深度来自动生成摘录。</p>
+</li>
+</ol>
+<h3 id="三、生成和部署博客"><a href="#三、生成和部署博客" class="headerlink" title="三、生成和部署博客"></a>三、生成和部署博客</h3><p>完成以上配置后，你需要重新生成博客并部署到服务器或本地进行预览。运行以下命令来生成博客：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>然后，你可以使用<code>hexo server</code>命令来启动本地服务器进行预览，或者将生成的博客文件部署到你的服务器上。</p>
+<h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><ol>
+<li><strong>插件版本</strong>：请确保你安装的<code>hexo-excerpt</code>插件版本与你的Hexo和Next主题版本兼容。</li>
+<li><strong>配置冲突</strong>：在配置过程中，请注意避免与其他插件或主题的配置项发生冲突。</li>
+<li><strong>备份</strong>：在进行任何配置更改之前，请务必备份你的站点配置文件和主题配置文件，以防止意外丢失数据。</li>
+</ol>
+<p>通过以上步骤，你应该能够成功解决Hexo博客的Next主题中阅读全文没有<code>auto_excerpt</code>的问题。如果仍然遇到问题，请检查你的配置是否正确，或者查阅相关文档和社区支持以获取更多帮助。</p>
+]]></content>
+      <tags>
+        <tag>Hexo配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>tag页面功能添加</title>
+    <url>/2024/11/16/tag%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0/</url>
+    <content><![CDATA[<h2 id="步骤一生成-Tag-page"><a href="#步骤一生成-Tag-page" class="headerlink" title="步骤一生成 Tag page"></a>步骤一生成 Tag page</h2><p>你需要在hexo根目录的source文件夹下新建一个tags文件夹，然后在tags文件夹里面新建一个index.md文件。快捷命令为：$ hexo new page “tags”</p>
+<h2 id="步骤二编辑index-md文件，内容如下："><a href="#步骤二编辑index-md文件，内容如下：" class="headerlink" title="步骤二编辑index.md文件，内容如下："></a>步骤二编辑index.md文件，内容如下：</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="步骤三-打开Next主题-tags-选项"><a href="#步骤三-打开Next主题-tags-选项" class="headerlink" title="步骤三 打开Next主题 tags 选项"></a>步骤三 打开Next主题 tags 选项</h2><p>新建标签及分类界面<br>打开 主题配置文件，搜索 menu，找到如下代码：<br>把 tags 和 categories 前面的 # 删除，</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+
+
+<p>Local Search本地搜索<br>安装插件hexo-generator-searchdb,执行以下命令:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-searchdb</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+
+
+<p>修改hexo&#x2F;_config.yml站点配置文件，新增以下内容到任意位置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line"><span class="attr">field:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">format:</span> <span class="string">html</span></span><br><span class="line"><span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+
+<p>编辑 主题配置文件，启用本地搜索功能：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>————————————————<br> 博客为博主原创，转载请评论说明并注明出处，谢谢</p>
+<p>原文链接：<a href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></p>
+<p>前往图标库找到心仪的图标(我这里选择heartbeat)<br>打开主题配置文件themes\next_config.yml，搜索 footer → 将 name 后面的 user 替换成 fa-heartbeat → 将 animated 设置成 true → 将 color 修改为 #ff0000，如下图：</p>
+<p>作者：虹猫日志<br>链接：<a href="https://www.jianshu.com/p/64caf29fdd0c">https://www.jianshu.com/p/64caf29fdd0c</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+]]></content>
+      <categories>
+        <category>专业</category>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>Hexo配置</tag>
+        <tag>Next主题</tag>
+        <tag>linux</tag>
+        <tag>ubuntu</tag>
+        <tag>centos</tag>
+        <tag>mail</tag>
+      </tags>
   </entry>
   <entry>
     <title>独立开发者出海技术栈</title>
@@ -722,81 +797,6 @@
 </tr>
 </tbody></table>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Next主题找不到auto_excerpt</title>
-    <url>/2024/11/16/hexo%E5%88%86%E9%A1%B5/</url>
-    <content><![CDATA[<p>在Hexo博客的Next主题中，如果遇到阅读全文没有<code>auto_excerpt</code>的问题，这通常是因为在新版本的Next主题中，<code>auto_excerpt</code>功能已被移除。为了解决这个问题，你可以采取以下步骤：</p>
-<h3 id="一、安装hexo-excerpt插件"><a href="#一、安装hexo-excerpt插件" class="headerlink" title="一、安装hexo-excerpt插件"></a>一、安装hexo-excerpt插件</h3><p>由于Next主题的新版本不再支持<code>auto_excerpt</code>，你可以通过安装<code>hexo-excerpt</code>插件来替代这一功能。在Hexo博客的网站根目录下，打开命令行工具，运行以下命令来安装插件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-excerpt --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="二、配置站点和主题"><a href="#二、配置站点和主题" class="headerlink" title="二、配置站点和主题"></a>二、配置站点和主题</h3><p>安装完插件后，你需要在站点配置文件和主题配置文件中进行相应的设置。</p>
-<ol>
-<li><p><strong>站点配置文件（_config.yml）</strong>：</p>
-<p> 在站点配置文件中，你可以添加以下配置项来设置摘录的深度、排除的页面以及是否隐藏全文摘录等：</p>
- <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt:</span></span><br><span class="line">  <span class="attr">depth:</span> <span class="number">5</span>                <span class="comment"># 摘录的深度，即生成的摘录内容所包含的层级标题数量</span></span><br><span class="line">  <span class="attr">excerpt_excludes:</span> []    <span class="comment"># 不生成摘录的页面列表</span></span><br><span class="line">  <span class="attr">more_excludes:</span> []       <span class="comment"># 不使用&lt;!-- more --&gt;标签的页面列表</span></span><br><span class="line">  <span class="attr">hideWholePostExcerpts:</span> <span class="literal">true</span> <span class="comment"># 是否隐藏全文摘录（当文章较短时，可能不需要摘录）</span></span><br></pre></td></tr></table></figure>
-
-<p> 注意：这里的配置项可能因插件版本的不同而有所差异，请根据你安装的插件版本进行调整。</p>
-</li>
-<li><p><strong>主题配置文件（themes&#x2F;next&#x2F;_config.yml）</strong>：</p>
-<p> 在主题配置文件中，你需要启用摘录描述和阅读全文按钮等配置项。例如：</p>
- <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span>  <span class="comment"># 是否在摘录下方显示文章描述</span></span><br><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span>        <span class="comment"># 是否显示阅读全文按钮</span></span><br></pre></td></tr></table></figure>
-
-<p> 此外，如果你希望在文章中使用<code>&lt;!-- more --&gt;</code>标签来精确控制摘录的内容，你可以在该标签之前的内容作为摘录显示。如果不使用此标签，则插件将按照站点配置文件中设置的深度来自动生成摘录。</p>
-</li>
-</ol>
-<h3 id="三、生成和部署博客"><a href="#三、生成和部署博客" class="headerlink" title="三、生成和部署博客"></a>三、生成和部署博客</h3><p>完成以上配置后，你需要重新生成博客并部署到服务器或本地进行预览。运行以下命令来生成博客：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>然后，你可以使用<code>hexo server</code>命令来启动本地服务器进行预览，或者将生成的博客文件部署到你的服务器上。</p>
-<h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><ol>
-<li><strong>插件版本</strong>：请确保你安装的<code>hexo-excerpt</code>插件版本与你的Hexo和Next主题版本兼容。</li>
-<li><strong>配置冲突</strong>：在配置过程中，请注意避免与其他插件或主题的配置项发生冲突。</li>
-<li><strong>备份</strong>：在进行任何配置更改之前，请务必备份你的站点配置文件和主题配置文件，以防止意外丢失数据。</li>
-</ol>
-<p>通过以上步骤，你应该能够成功解决Hexo博客的Next主题中阅读全文没有<code>auto_excerpt</code>的问题。如果仍然遇到问题，请检查你的配置是否正确，或者查阅相关文档和社区支持以获取更多帮助。</p>
-]]></content>
-      <tags>
-        <tag>Hexo配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>tag页面功能添加</title>
-    <url>/2024/11/16/tag%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0/</url>
-    <content><![CDATA[<h2 id="步骤一生成-Tag-page"><a href="#步骤一生成-Tag-page" class="headerlink" title="步骤一生成 Tag page"></a>步骤一生成 Tag page</h2><p>你需要在hexo根目录的source文件夹下新建一个tags文件夹，然后在tags文件夹里面新建一个index.md文件。快捷命令为：$ hexo new page “tags”</p>
-<h2 id="步骤二编辑index-md文件，内容如下："><a href="#步骤二编辑index-md文件，内容如下：" class="headerlink" title="步骤二编辑index.md文件，内容如下："></a>步骤二编辑index.md文件，内容如下：</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="步骤三-打开Next主题-tags-选项"><a href="#步骤三-打开Next主题-tags-选项" class="headerlink" title="步骤三 打开Next主题 tags 选项"></a>步骤三 打开Next主题 tags 选项</h2><p>新建标签及分类界面<br>打开 主题配置文件，搜索 menu，找到如下代码：<br>把 tags 和 categories 前面的 # 删除，</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
-
-
-<p>Local Search本地搜索<br>安装插件hexo-generator-searchdb,执行以下命令:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-searchdb</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
-
-
-<p>修改hexo&#x2F;_config.yml站点配置文件，新增以下内容到任意位置：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line"><span class="attr">field:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">format:</span> <span class="string">html</span></span><br><span class="line"><span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
-
-<p>编辑 主题配置文件，启用本地搜索功能：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>————————————————<br> 博客为博主原创，转载请评论说明并注明出处，谢谢</p>
-<p>原文链接：<a href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></p>
-<p>前往图标库找到心仪的图标(我这里选择heartbeat)<br>打开主题配置文件themes\next_config.yml，搜索 footer → 将 name 后面的 user 替换成 fa-heartbeat → 将 animated 设置成 true → 将 color 修改为 #ff0000，如下图：</p>
-<p>作者：虹猫日志<br>链接：<a href="https://www.jianshu.com/p/64caf29fdd0c">https://www.jianshu.com/p/64caf29fdd0c</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-]]></content>
-      <categories>
-        <category>专业</category>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>Hexo配置</tag>
-        <tag>Next主题</tag>
-        <tag>linux</tag>
-        <tag>ubuntu</tag>
-        <tag>centos</tag>
-        <tag>mail</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hexo 文章加密</title>
