@@ -40,6 +40,61 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Intrudicing Baidu&#39;s Low-Code-Front-End Framwork AMIS  for Rapid Page Development</title>
+    <url>/2024/09/14/Introduce-Baidu-AMIS/</url>
+    <content><![CDATA[<p>Amis, a low-code front-end framework open-sourced by Baidu, offers an efficient approach to page development, particularly suited for projects requiring rapid iteration. This framework revolutionizes the traditional front-end development process by empowering developers to generate complex pages through simple JSON configurations rather than extensive coding.</p>
+<p><strong>Key Features of Amis</strong>:</p>
+<ol>
+<li><p><strong>Low-Code Development</strong>:</p>
+<ul>
+<li>Amis allows developers to swiftly build backend management pages by merely configuring JSON files, significantly reducing the workload associated with front-end development. This feature enables even non-technical users to create functional pages with minimal training.</li>
+</ul>
+</li>
+<li><p><strong>Rich Component Library</strong>:</p>
+<ul>
+<li>Amis boasts a comprehensive component library comprising over 130+ reusable UI components, including forms, tables, charts, rich text editors, file uploaders, calendars, and more. This extensive library caters to a wide range of development needs, facilitating the creation of visually appealing and feature-rich interfaces.</li>
+</ul>
+</li>
+<li><p><strong>High Efficiency and Flexibility</strong>:</p>
+<ul>
+<li>By leveraging JSON configurations, Amis streamlines the development process, enabling rapid page construction and iteration. Moreover, it supports custom component development, allowing for a hybrid approach combining low-code configuration with traditional coding, ensuring both efficiency and flexibility.</li>
+</ul>
+</li>
+<li><p><strong>Dynamic Rendering and Integration</strong>:</p>
+<ul>
+<li>Amis dynamically generates pages based on user permissions and data states, providing robust control over access and content presentation. It also integrates seamlessly with various backend services, facilitating data fetching and form submission through JSON-defined APIs.</li>
+</ul>
+</li>
+<li><p><strong>Extensive Application</strong>:</p>
+<ul>
+<li>Amis has been widely adopted within Baidu, having created tens of thousands of pages across various departments and projects. Its versatility has been proven in diverse scenarios, ranging from content moderation to machine management, and from data analysis to model training.</li>
+</ul>
+</li>
+<li><p><strong>Easy Maintenance</strong>:</p>
+<ul>
+<li>The use of JSON configurations for page definition enhances code readability and maintainability. This makes it easier for developers to update and manage existing pages, reducing long-term maintenance costs.</li>
+</ul>
+</li>
+<li><p><strong>Cross-Platform Compatibility</strong>:</p>
+<ul>
+<li>Amis’s configuration-based approach ensures that a single set of configurations can be adapted for use on multiple platforms, including web and mobile, simplifying the development process for multi-channel applications.</li>
+</ul>
+</li>
+</ol>
+<p><strong>How It Works</strong>:</p>
+<p>Amis translates JSON configurations into corresponding React components. The <code>type</code> property in the JSON determines the component to be rendered, while other properties are passed as props to the component, facilitating dynamic and responsive page generation.</p>
+<p><strong>Conclusion</strong>:</p>
+<p>Amis, as a low-code front-end framework, offers a powerful and efficient solution for rapid page development. Its combination of simplicity, flexibility, and extensibility makes it an ideal choice for developers seeking to streamline their front-end development processes while maintaining high levels of customization and control.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Restart from 2024</title>
+    <url>/2024/09/11/Restart-from-2024/</url>
+    <content><![CDATA[<p>My last post no the github hexo repository was at <strong>2019-11-14 18:59:37</strong>, Maybe I need to resatrt this Blog.<br>From today I will use this bolog to record lerning note,such as langue learning and development exprircen and other things.</p>
+<p>My last post on the GitHub Hexo repository was at 2019-11-14 18:59:37. Maybe I need to restart this blog.<br>From today, I will use this blog to record learning notes, such as language learning, development experiences, and other things.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>独立开发者出海技术栈</title>
     <url>/2024/11/15/develop-tool-kit/</url>
     <content><![CDATA[<p><a href="https://github.com/weijunext/indie-hacker-tools">仓库地址</a></p>
@@ -744,6 +799,13 @@
       </tags>
   </entry>
   <entry>
+    <title>UI相关</title>
+    <url>/2024/11/20/ui/</url>
+    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>RGB 239,241,242</p>
+<p>#EFF1F2</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hexo 文章加密</title>
     <url>/2024/11/16/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 您输入的密码不对哦, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -763,58 +825,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Intrudicing Baidu&#39;s Low-Code-Front-End Framwork AMIS  for Rapid Page Development</title>
-    <url>/2024/09/14/Introduce-Baidu-AMIS/</url>
-    <content><![CDATA[<p>Amis, a low-code front-end framework open-sourced by Baidu, offers an efficient approach to page development, particularly suited for projects requiring rapid iteration. This framework revolutionizes the traditional front-end development process by empowering developers to generate complex pages through simple JSON configurations rather than extensive coding.</p>
-<p><strong>Key Features of Amis</strong>:</p>
-<ol>
-<li><p><strong>Low-Code Development</strong>:</p>
-<ul>
-<li>Amis allows developers to swiftly build backend management pages by merely configuring JSON files, significantly reducing the workload associated with front-end development. This feature enables even non-technical users to create functional pages with minimal training.</li>
-</ul>
+    <title>tag页面功能添加</title>
+    <url>/2024/11/16/%E9%A9%AC%E6%96%AF%E5%85%8B%E7%9A%84%E4%BA%94%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="马斯克的五步工作法"><a href="#马斯克的五步工作法" class="headerlink" title="马斯克的五步工作法:"></a>马斯克的五步工作法:</h2><ol>
+<li><p>Make requirements less dumb<br>不要提太蠢的需求。尤其聪明人给的需求更是危险，因为你可能不会去质疑他;</p>
 </li>
-<li><p><strong>Rich Component Library</strong>:</p>
-<ul>
-<li>Amis boasts a comprehensive component library comprising over 130+ reusable UI components, including forms, tables, charts, rich text editors, file uploaders, calendars, and more. This extensive library caters to a wide range of development needs, facilitating the creation of visually appealing and feature-rich interfaces.</li>
-</ul>
+<li><p>Delete parts or process<br>删除需求当中所有你能删除的部分和流程，后来可能也会加回来，但不超过10%，如果后来加回来的部分不到10% 证明删得还不够;</p>
 </li>
-<li><p><strong>High Efficiency and Flexibility</strong>:</p>
-<ul>
-<li>By leveraging JSON configurations, Amis streamlines the development process, enabling rapid page construction and iteration. Moreover, it supports custom component development, allowing for a hybrid approach combining low-code configuration with traditional coding, ensuring both efficiency and flexibility.</li>
-</ul>
+<li><p>Simplify or Optimize<br>简化和优化，Elon特別强调优化要放在第三步。很多聪明的工程师最常犯的错误，就是老是在优化根本不该存在的东西;</p>
 </li>
-<li><p><strong>Dynamic Rendering and Integration</strong>:</p>
-<ul>
-<li>Amis dynamically generates pages based on user permissions and data states, providing robust control over access and content presentation. It also integrates seamlessly with various backend services, facilitating data fetching and form submission through JSON-defined APIs.</li>
-</ul>
+<li><p>Accelerate cycle times<br>加速迭代，但前三点沒有做完之前先別加速，否则只是加快了自掘坟墓的速度。注意加速的是迭代，而不是速度。迭代是一个循环，通过这个循环我们可以不停的验证当前推进的方向，并且持续的进行改进和优化;</p>
 </li>
-<li><p><strong>Extensive Application</strong>:</p>
-<ul>
-<li>Amis has been widely adopted within Baidu, having created tens of thousands of pages across various departments and projects. Its versatility has been proven in diverse scenarios, ranging from content moderation to machine management, and from data analysis to model training.</li>
-</ul>
-</li>
-<li><p><strong>Easy Maintenance</strong>:</p>
-<ul>
-<li>The use of JSON configurations for page definition enhances code readability and maintainability. This makes it easier for developers to update and manage existing pages, reducing long-term maintenance costs.</li>
-</ul>
-</li>
-<li><p><strong>Cross-Platform Compatibility</strong>:</p>
-<ul>
-<li>Amis’s configuration-based approach ensures that a single set of configurations can be adapted for use on multiple platforms, including web and mobile, simplifying the development process for multi-channel applications.</li>
-</ul>
+<li><p>Automate<br>最后才是自动化。按照Elon自己说法，他一直都希望Tesla 工厂中能够有更多的工人而不是全部都由机器人来工作。自动化的弊端有三个，分别是1)高昂的成本;2)极高的出错几率;3)妨碍引入新特性。。而 Elon真正希望构建的是一个可以随时更换组件、流程、探索新特性的并行系统;</p>
 </li>
 </ol>
-<p><strong>How It Works</strong>:</p>
-<p>Amis translates JSON configurations into corresponding React components. The <code>type</code> property in the JSON determines the component to be rendered, while other properties are passed as props to the component, facilitating dynamic and responsive page generation.</p>
-<p><strong>Conclusion</strong>:</p>
-<p>Amis, as a low-code front-end framework, offers a powerful and efficient solution for rapid page development. Its combination of simplicity, flexibility, and extensibility makes it an ideal choice for developers seeking to streamline their front-end development processes while maintaining high levels of customization and control.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Restart from 2024</title>
-    <url>/2024/09/11/Restart-from-2024/</url>
-    <content><![CDATA[<p>My last post no the github hexo repository was at <strong>2019-11-14 18:59:37</strong>, Maybe I need to resatrt this Blog.<br>From today I will use this bolog to record lerning note,such as langue learning and development exprircen and other things.</p>
-<p>My last post on the GitHub Hexo repository was at 2019-11-14 18:59:37. Maybe I need to restart this blog.<br>From today, I will use this blog to record learning notes, such as language learning, development experiences, and other things.</p>
+<p><strong>Elon Musk 说他个人犯了上述五个步骤”反过来”做的错误很多次，他先做自动化，再进行加速优化，最后才想到要刪掉沒必要存在的东西</strong></p>
 ]]></content>
   </entry>
   <entry>
